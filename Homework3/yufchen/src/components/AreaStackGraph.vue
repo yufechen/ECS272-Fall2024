@@ -162,7 +162,7 @@ function createChart(container: HTMLDivElement, data: any) {
   let currentIndex = initialIndex;
   const interval = setInterval(() => {
     if (currentIndex >= days.length) {
-      clearInterval(interval);
+      currentIndex = initialIndex;
       return;
     }
 
